@@ -13,7 +13,8 @@ Use this installation option if you want to require the OwlCarousel module with 
 Run the following commands from the root directory of your Magento installation. 
 
 ```bash
-composer require classyllama/module-owlcarousel:*
+composer config repositories.kraken/module-owlcarousel git https://github.com/krakencommerce/ClassyLlama_OwlCarousel.git
+composer require classyllama/module-owlcarousel:dev-master
 bin/magento module:enable --clear-static-content ClassyLlama_OwlCarousel
 bin/magento setup:upgrade
 bin/magento cache:flush
